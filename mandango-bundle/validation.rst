@@ -1,10 +1,11 @@
 Validation
 ==========
 
-To define the validation of your Mandango's documents you can use the config classes:
+You can define the validation of your *mandango* documents directly in your *schema.yml:
 
 .. code-block:: yaml
 
+    # app/config/mandango/schema.yml
     Model\Author:
         fields:
             name: { type: string, validation: [NotBlank: ~, Type: string] }

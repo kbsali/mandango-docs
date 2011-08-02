@@ -21,7 +21,7 @@ Add the MandangoBundle:
 
 Add all of them and the Model namespace to your autoload::
 
-    // app/autoload.php
+    # app/autoload.php
     $loader->registerNamespaces(array(
         // ...
         'Mandango\MandangoBundle' => __DIR__.'/../vendor/bundles',
@@ -33,14 +33,15 @@ Add all of them and the Model namespace to your autoload::
 
 Add the MandangoBundle to your application kernel::
 
-    // app/AppKernel.php
+    # app/AppKernel.php
     public function registerBundles()
     {
-        return array(
+        $bundles = array(
             // ...
             new Mandango\MandangoBundle\MandangoBundle(),
             // ...
         );
+        // ...
     }
 
 Configuration

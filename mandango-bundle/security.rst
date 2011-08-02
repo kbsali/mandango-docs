@@ -1,11 +1,11 @@
 Security
 ========
 
-The MandangoBundle comes with the *MandangoUserProvider* provider to integrate
-your Mandango's documents with the Symfony2 security layer.
+The *MandangoBundle* comes with a *MandangoUserProvider* provider which allows you to integrate your *Mandango* documents to the security layer of Symfony2.
 
 .. code-block:: yaml
 
+    # app/config/security.yml
     services:
         security.provider.mandango:
             class: Mandango\MandangoBundle\Security\MandangoUserProvider

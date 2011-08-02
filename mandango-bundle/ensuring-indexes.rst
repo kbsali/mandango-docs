@@ -1,8 +1,7 @@
 Ensuring Indexes
 ================
 
-To ensure the indexes of your Mandango's document you just have to execute the
-*mandango:ensure-indexes* command:
+To ensure the indexes of your *Mandango* document, just execute the *mandango:ensure-indexes* command:
 
 .. code-block:: bash
 

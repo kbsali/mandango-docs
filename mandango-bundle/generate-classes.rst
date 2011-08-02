@@ -1,7 +1,7 @@
 Generate Classes
 ================
 
-The config classes are defined in the application and bundles config directories,
+The config classes should be defined in the *application* and/or *bundles* config directories,
 and they are defined in YAML_.
 
 .. code-block:: yaml
@@ -9,8 +9,7 @@ and they are defined in YAML_.
     app/config/mandango/*.yml
     *Bundle/Resources/config/mandango/*.yml
 
-You must to use the standard namespace *Model* in the classes, thus the bundles will be
-reusable and coherent.
+You must use the standard namespace *Model* in the classes so that the bundles stay coherent and can be reusable.
 
 You don't need to use bundle namespace in your application classes:
 
@@ -22,7 +21,7 @@ You don't need to use bundle namespace in your application classes:
             title:   string
             content: string
 
-In the bundles is necessary to use the bundle name to separate the classes by bundle:
+In the bundles however, it is necessary to use the bundle name to separate the classes by bundle:
 
 .. code-block:: yaml
 
@@ -32,8 +31,7 @@ In the bundles is necessary to use the bundle name to separate the classes by bu
             username: string
             password: string
 
-The classes are generated in the *src/Model* directory, and the bundle classes extend of
-a bundle class before of the base class to be able to custom them in the bundles.
+The classes are generated in the *src/Model* directory, and the bundle classes extend of a bundle class before of the base class to be able to customize them in the bundles (?).
 
 .. code-block:: yaml
 
@@ -46,7 +44,7 @@ a bundle class before of the base class to be able to custom them in the bundles
         Mandango\MandangoUserBundle\Model\User:
             Model\MandangoUserBundle\Base\User
 
-To generate the classes is used the *mandango:generate* command:
+To generate the classes, use the command *mandango:generate*:
 
 .. code-block:: bash
 
